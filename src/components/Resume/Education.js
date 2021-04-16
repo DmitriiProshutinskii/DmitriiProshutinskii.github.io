@@ -20,8 +20,10 @@ const Education = ({ data }) => (
 
 Education.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
+    university: PropTypes.string,
     school: PropTypes.string,
     degree: PropTypes.string,
+    theis: PropTypes.string,
     link: PropTypes.string,
     year: PropTypes.number,
   })),

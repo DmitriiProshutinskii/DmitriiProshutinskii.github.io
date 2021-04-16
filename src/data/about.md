@@ -1,13 +1,19 @@
 
-# Intro
+# Введение
 
-I am a co-founder and the CTO of [Arthena](https://arthena.com) where I build tools to price fine art quickly, accurately, and at scale. I also advise startups, and I invest in people and ideas through a [small venture fund](https://skepticalinvestments.biz). I am particularly interested in projects that touch health and safety, imaging, social impact, and aerospace. If you think I can be helpful to you or would like to meet me, please feel free to get in touch.
+Я iOS разработчик в компании [Ramax Group](https://www.ramax.ru/), где я разрабатываю приложения для компании [Аэрофлот](https://www.aeroflot.ru/). Веду свой телеграмм канал [NOTEBOOK OF THINGS I DON’T KNOW](https://t.me/notebook_of_things_I_dont_know) (*на самом деле дневник прогресса по iOS разработке*). До этого долго занимался [смешанной реальностью](https://docs.microsoft.com/en-us/windows/mixed-reality/discover/mixed-reality), из-за чего увлекаюсь технологиями VR/AR/MR. Могу даже рассказать об этом вам. Ранее состоял в студенческой организации [Физтех.Радио](https://vk.com/radiomipt), где был руководителем 2 года. Если вам кажется, что мы можем помочь друг другу или вам просто хочется поговорить про философию экзистенциализма и поесть спагетти с песто, пишите, буду рад!
 
-# Currently
+# Что сейчас
 
-At Arthena, I have learned how to build teams, manage people, shape culture, develop relationships with customers, sell enterprise products, and build on-line predictive models with technologies like [Dask](https://dask.org/), [Dagster](https://dagster.io/), [TensorFlow](https://www.tensorflow.org/), and [spaCy](https://spacy.io/). I primarily work as a data engineer but have broad experience across Arthena’s stack.
+В Ramax я только начинаю карьеру iOS разработчика. Пройдя курс от [Stanford](https://cs193p.sites.stanford.edu/) по iOS разработке и походив по собеседованиям, я оказался здесь, в самом начале пути. Уже подумываю попробовать Android разработку и [Flatter](https://flutter.dev/). А пока разрабатываю приложение для Аэрофлота.
 
-# Some history
+# Немного истории
+
+- В 8 классе с подачи моей классной руководительницы Елены Александровны я пошёл в ВФТШ, которая, на мой взгляд, была очень жесткой. Так я познакомился с МФТИ.
+
+- В 11 классе стоял выбор, куда пойти. Многие пугали, что в МФТИ не будет личной жизни: только учеба. И я даже подумывал пойти в МИИТ или МАДИ, чтобы не упустить моодость, но вовремя одумался. И подал оригинал в МФТИ на ФМХФ.
+
+- Как оказалось, в МФТИ очень насыщенная студенческая жизнь, а люди, которые здесь учатся, крайне интеллигентны. Здесь был футбол и самбо, которыми я занимался ещё в школе. Были студенческие организации разных калибров. Здесь я провёл 6 лет, которые полностью изменили моё мировоззрение.
 
 - My parents put a computer in my bedroom in 1993 when I was 3. It was an old Tandy that ran MS-DOS. My favorite games were Street Rod 2, Wolfenstein 3D, and Tom and Jerry. It had a mechanical keyboard and a turbo button. To this day, I still don't know what pressing the turbo button really did.
 
@@ -41,13 +47,13 @@ At Arthena, I have learned how to build teams, manage people, shape culture, dev
 
 Ask me in person for other stories that I'm afraid to share with the internet.
 
-# I like
+# Я люблю
 
-- Running
-- Skiing
-- Sailing and the sea
-- Space
-- Summer
+- Футбол
+- Самбо
+- Старые фильмы
+- Песто со спагетти
+- Подкасты
 - [Books](https://www.goodreads.com/mdangelo)
 - Colored pencils ([Faber-Castell Polychromos](https://www.faber-castell.com/products/art-and-graphic/polychromos))
 - Podcasts ([The Daily](https://www.nytimes.com/column/the-daily), [Planet Money](https://www.npr.org/sections/money/), [The Indicator](https://www.npr.org/podcasts/510325/the-indicator-from-planet-money), [This American Life](https://www.thisamericanlife.org/), [99% Invisible](https://99percentinvisible.org/episodes/), [The Economist](http://radio.economist.com/), [Radiolab](https://www.wnycstudios.org/shows/radiolab), [Hidden Brain](https://www.npr.org/series/423302056/hidden-brain), [Inquiring Minds](https://inquiring.show), and others)
@@ -56,6 +62,10 @@ Ask me in person for other stories that I'm afraid to share with the internet.
 
 # Travel / Geography
 
+- Родился я в Якутске, но в 6 лет перехал с семьёй в Долгопрудный, где до сих пор живу
+- На 5 курсе я полюбил путешествия и мы с моим другом Юрой тогда объехали кучу мест
+- В 2019-2020 я был в Черногории, Испании, Германии, Франции, Финляндии, Шведции
+- А в 2020 после начала Covid-19 только в Улан-Удэ на Байкале.
 - I am from originally from Buffalo, New York. I have since lived in Palo Alto, Mountain View, San Francisco, Seattle, and New York.
 - I've been to ~ 50 countries, some of which I have forgotten, and many of which I would like to revisit.
 - In 2016, I visited: Canada, Ethiopia, Austria, Germany, Belgium, Ireland, Northern Ireland, Italy, Romania, Sweden, Norway, Svalbard, Panama, Costa Rica, Uganda, Japan, and the UAE, mostly in that order.

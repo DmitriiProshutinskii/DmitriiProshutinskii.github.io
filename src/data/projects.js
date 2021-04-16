@@ -12,15 +12,15 @@ const data = [
       + 'the charity of your choice.',
   },
   {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
+    title: 'Mixed Reality Application',
+    subtitle: 'Визуализация месторождений в очках Microsoft HoloLens 2',
     link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
+    image: '/images/projects/MRApp.png',
+    date: '2020-12-20',
     desc:
-      'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
+      'Разработал приложение с многопользовательским взаимодействием'
+      + 'для очков смешанной реальности Microsoft HoloLens 2,'
+      + 'где использовал для взаимодействия жесты, голос, взгляд пользователя',
   },
   {
     title: 'Space Potato',

@@ -83,8 +83,12 @@
 }
 
 .degree-container {
-	h4 {
+
+	h6 {
 		font-weight: normal;
+	}
+	h4 {
+		font-weight: bold;
 	}
 
 	.degree {
@@ -97,6 +101,29 @@
 	.school {
 		text-transform: none;
 		padding-top: 0.3em;
+		margin-bottom: .5em;
+		font-style: italic;
+	}
+
+	.university {
+		text-transform: none;
+		padding-top: 0.3em;
+		margin-bottom: .1em;
+		font-size: 0.9em;
+	}
+
+	.thesis {
+		text-transform: none;
+		letter-spacing: 0.16em;
+		padding-top: 0.3em;
+		margin-bottom: .05em;
+		font-weight: bold;
+	}
+
+	.description {
+		text-transform: none;
+		letter-spacing: 0.16em;
+		padding-top: 0.2em;
 		margin-bottom: 1em;
 	}
 }
@@ -112,7 +139,7 @@
   letter-spacing: 0.25em;
   line-height: 2.5;
   margin-top: -1em;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 }
 
 .courses ul li{

@@ -23,8 +23,8 @@ const About = () => (
     <article className="post markdown" id="about">
       <header>
         <div className="title">
-          <h2 data-testid="heading"><Link to="/about">About Me</Link></h2>
-          <p>(in about {count} words)</p>
+          <h2 data-testid="heading"><Link to="/about">О себе</Link></h2>
+          <p>(всего в {count} словах)</p>
         </div>
       </header>
       <ReactMarkdown
