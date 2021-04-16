@@ -19,32 +19,32 @@ import Stats from '../pages/Stats';
 const pages = [
   {
     route: '/',
-    heading: 'About this site',
+    heading: 'Персональный сайт',
     component: Index,
   },
   {
     route: '/about',
-    heading: 'About Me',
+    heading: 'О себе',
     component: About,
   },
   {
     route: '/projects',
-    heading: 'Projects',
+    heading: 'Проекты',
     component: Projects,
   },
   {
     route: '/stats',
-    heading: 'Stats',
+    heading: 'Статистика',
     component: Stats,
   },
   {
     route: '/contact',
-    heading: 'Contact',
+    heading: 'Контакты',
     component: Contact,
   },
   {
     route: '/resume',
-    heading: 'Resume',
+    heading: 'Резюме',
     component: Resume,
   },
 ];
