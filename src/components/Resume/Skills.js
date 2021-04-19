@@ -23,7 +23,6 @@ class Skills extends Component {
     const actCat = Object.keys(this.state.buttons).reduce((cat, key) => (
       this.state.buttons[key] ? key : cat
     ), 'All');
-
     return this.state.skills.sort((a, b) => {
       let ret = 0;
       if (a.competency > b.competency) ret = -1;
@@ -72,9 +71,10 @@ class Skills extends Component {
       <div className="skills">
         <div className="link-to" id="навыки" />
         <div className="title">
-          <h3>Skills</h3>
-          <p>Note: I think these sections are silly, but everyone seems to have one.
-            Here is a *mostly* honest overview of my skills.
+          <h3>Навыки</h3>
+          <p>Важно! Я думаю, что это не  лучший способ рассказать про свои способности, но многим
+            нравится такой визуальный подход. Здесь я постарался (насколько возможно)
+            честно оценить свои навыки.
           </p>
         </div>
         <div className="skill-button-container">

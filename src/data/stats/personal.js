@@ -27,14 +27,21 @@ const data = [
   {
     key: 'countries',
     label: 'Посещенные страны',
-    value: 53,
+    value: 11,
     link:
-      'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
+      'https://www.google.com/maps/d/u/0/embed?mid=1Yb2u5jH6WMYyK7A1QseHNdlNS2jzcE7G',
   },
   {
     key: 'location',
     label: 'Город проживания',
     value: 'Долгопрдуный, МО',
+  },
+  {
+    key: 'born',
+    label: 'Родился в',
+    value: 'г. Якутск',
+    link:
+      'https://ru.wikipedia.org/wiki/%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA',
   },
 ];
 
