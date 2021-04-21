@@ -18,6 +18,11 @@ const Age = () => {
   return <>{age}</>;
 };
 
+const CurrentYear = () => {
+  const date = new Date().getFullYear();
+  return <>Прочитано книг в {date}</>;
+};
+
 const data = [
   {
     key: 'age',
@@ -42,6 +47,11 @@ const data = [
     value: 'г. Якутск',
     link:
       'https://ru.wikipedia.org/wiki/%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA',
+  },
+  {
+    key: 'books',
+    label: <CurrentYear />,
+    value: '2',
   },
 ];
 
