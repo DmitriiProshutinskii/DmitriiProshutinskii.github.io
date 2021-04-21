@@ -1,20 +1,20 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
+    title: 'Любовь сильнее обычной',
+    subtitle: 'Трейлер студенческого спектакля',
+    link: 'https://vk.com/video-191338964_456239021',
+    image: '/images/projects/LoveStronger.jpg',
+    date: '2020-02-13',
     desc:
-      'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+      'Один из моих любимых роликов, сделанных за студенчество. '
+      + 'Мы долго думали над постельной сценой, как  снять всё кратко и'
+      + 'в то же время красочно. А поезд, у которого мы снимали, вообще '
+      + 'ехал из Чечни. В общем, весело :)',
   },
   {
     title: 'Mixed Reality Application',
     subtitle: 'Визуализация месторождений в очках Microsoft HoloLens 2',
-    link: 'https://devpost.com/software/harvest',
     image: '/images/projects/MRApp.png',
     date: '2020-12-20',
     desc:
@@ -23,25 +23,16 @@ const data = [
       + 'где использовал для взаимодействия жесты, голос, взгляд пользователя',
   },
   {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
+    title: 'Эфир Века',
+    subtitle: '18-часовой эфир с гостями из раличных вузов',
+    link: 'https://vk.com/wall-129331635_6328',
+    image: '/images/projects/EV.jpg',
+    date: '2012-11-15',
     desc:
-      'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
-  },
-  {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
-    desc:
-      'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-      + 'Over 60,000 cats were classified before server bills made the project too expensive '
-      + 'to continue hosting.',
+      'Это был крутой проект, где на протяжении 18 часов мы разговаривали с крутыми '
+      + 'представителями московского студенчества, где я не спал 2 суток, но всё таки '
+      + 'сделал это. Конечно, не без команды. В конце мы ещё тусили в КЗ с алкоголем,  '
+      + 'чего делать нельзя. В общем, было весело!',
   },
 ];
 

@@ -9,85 +9,60 @@
 
 # Немного истории
 
+- В 11 лет я пошёл на самбо. Это был мой первый осознанный серьёзный выбор того, чем я хочу заниматься. Я ездил на соревнования, гулял с друзьями с секции. А однажды мы бегали по роще километров 6. Было очень трудно, но именно тогда я понял, как это приятно бегать по лесу в окружении друзей.
+
 - В 8 классе с подачи моей классной руководительницы Елены Александровны я пошёл в ВФТШ, которая, на мой взгляд, была очень жесткой. Так я познакомился с МФТИ.
 
 - В 11 классе стоял выбор, куда пойти. Многие пугали, что в МФТИ не будет личной жизни: только учеба. И я даже подумывал пойти в МИИТ или МАДИ, чтобы не упустить моодость, но вовремя одумался. И подал оригинал в МФТИ на ФМХФ.
 
 - Как оказалось, в МФТИ очень насыщенная студенческая жизнь, а люди, которые здесь учатся, крайне интеллигентны. Здесь был футбол и самбо, которыми я занимался ещё в школе. Были студенческие организации разных калибров. Здесь я провёл 6 лет, которые полностью изменили моё мировоззрение.
 
-- Технологии всегда занимали в моей жизни важную роль. В 10 лет мне подарили стационарный компьютер, на котором я играл в [GTA San Andreas](https://en.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas) (и даже прошёл все миссии машиниста поезда)
+- Технологии всегда занимали в моей жизни важную роль. В 10 лет мне подарили стационарный компьютер, на котором я играл в [GTA San Andreas](https://en.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas) (и даже прошёл все миссии машиниста поезда) и в Need For Speed Most Wanted (которую до сих пор считаю лучшей из серии)
 
-- В университете на 2 курсе я прошёл курсы по C++ и C, и на тот момент это меня не зацепило. Были скучные лекции, нужно было много дебажить и так плохо работающий код...
+- В университете на 2 курсе я прошёл курсы по C++ и C, и на тот момент это меня не зацепило. Были скучные лекции, нужно было много дебажить и так мой плохо работающий код...
 
-- Но уже на 4 курсе я самостоятельно сменил некоторые факультетские курсы на курсы по Python и C++. В тот же год я начал писать на Python диплом.
+- Но уже на 4 курсе я самостоятельно сменил некоторые факультетские курсы на курсы по Python и C++. В тот же год я начал писать на Python дипломную работу.
 
-- At 18, In the summer before college, my friends and I started playing [Muggle Quidditch](https://en.wikipedia.org/wiki/Quidditch_(sport)). We went on to start over 8 teams in the [International Quidditch Association](https://en.wikipedia.org/wiki/International_Quidditch_Association) including the [Buffalo Quidditch Society](https://www.facebook.com/buffaloquidditch/). At our height, we were ranked third in the IQA. Although I don't play anymore, you can still see pictures of me holding a broom while wearing a chess camp t-shirt on facebook.
+- На 3 курсе я попал в студенческую организацию [Физтех.Радио](https://vk.com/radiomipt). Это был важный момент моей жизни. Именно тогда я поменял представление о Физтехе как о вузе. Да, я и раньше был на мероприятиях, но теперь я был их организатором. Тогда начался мой путь...
 
-- At 19, I took my first graduate course and published my first academic paper.
+- На уже 5 курсе я стал рукводителем радио. И очень хотел сделать радиовещание, хотя меня и тянуло во всё остальное: мероприятия, видео, подкасты. Тогда я многое научился делать (ведь я не мог не сделать, потому что иначе всё сломается), познал основы менеджерской профессии (и мне понравилось) и стал лучше ориентироваться в административной, медийной и менторской деятельности.
 
-- At 20, I co-authored a grant to build a satellite and managed a 60+ person team for the next two years. You can read more about that [here](https://ubnl.space/glados/).
+- Так же на 5 курсе я попал в [Инжиниригновый центр МФТИ](https://www.cet-mipt.ru/), где проработал 2 года и 8 месяцев, научившись очень большому количеству вещей. Во многом благодаря Андрею я стал взращивать в себе новые способности. Здесь я научился программировать на C#, научился работе в Unity. И познакомился с технологией Mixed Reality и HoloLens.
 
-Ask me in person for other stories that I'm afraid to share with the internet.
+- В 24 я выпустился, ушёл с поста руководителя радио, и на работе назрел кризис. Нужно было определяться, куда я дальше двигаюсь. ТАк я пошёл в [Ramax Group](https://www.ramax.ru/)
+
+А если вам хочется больше истории, которой здесь нет, готов лично за чашечкой кофе поговорить и рассказать.
 
 # Я люблю
 
 - Футбол
 - Самбо
-- Старые фильмы
+- Старые фильмы (скоро здесь будет ссылка)
 - Песто со спагетти
-- Подкасты
-- [Books](https://www.goodreads.com/mdangelo)
-- Colored pencils ([Faber-Castell Polychromos](https://www.faber-castell.com/products/art-and-graphic/polychromos))
-- Podcasts ([The Daily](https://www.nytimes.com/column/the-daily), [Planet Money](https://www.npr.org/sections/money/), [The Indicator](https://www.npr.org/podcasts/510325/the-indicator-from-planet-money), [This American Life](https://www.thisamericanlife.org/), [99% Invisible](https://99percentinvisible.org/episodes/), [The Economist](http://radio.economist.com/), [Radiolab](https://www.wnycstudios.org/shows/radiolab), [Hidden Brain](https://www.npr.org/series/423302056/hidden-brain), [Inquiring Minds](https://inquiring.show), and others)
+- Книги (скоро здесь будет ссылка)
+- Подкасты ([Истории русского секса](https://music.yandex.ru/album/9050820), [Так и будет](https://podcasts.apple.com/ru/podcast/%D1%82%D0%B0%D0%BA-%D0%B8-%D0%B1%D1%83%D0%B4%D0%B5%D1%82/id1474797217), [Письма к самому себе](https://podcasts.apple.com/ru/podcast/%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B0-%D0%BA-%D1%81%D0%B0%D0%BC%D0%BE%D0%BC%D1%83-%D1%81%D0%B5%D0%B1%D0%B5/id1504541331), [Калькулятор](https://podcasts.apple.com/ru/podcast/%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/id1480152280), [Так вышло](https://music.yandex.ru/album/6520140), [‎Newочём](https://podcasts.apple.com/ru/podcast/new%D0%BE%D1%87%D1%91%D0%BC/id1287567883), и другие)
 - [Good design](/)
-- [Photography](https://instagram.com/dangelosaurus)
 
-# Путешествия
+# [Путешествия](https://www.google.com/maps/d/u/0/embed?mid=1Yb2u5jH6WMYyK7A1QseHNdlNS2jzcE7G)
 
 - Родился я в Якутске, но в 6 лет перехал с семьёй в Долгопрудный, где до сих пор живу
 - На 5 курсе я полюбил путешествия и мы с моим другом Юрой тогда объехали кучу мест
 - В 2019-2020 я был в Черногории, Испании, Германии, Франции, Финляндии, Шведции
 - А в 2020 после начала Covid-19 только в Улан-Удэ на Байкале.
-- I am from originally from Buffalo, New York. I have since lived in Palo Alto, Mountain View, San Francisco, Seattle, and New York.
-- I've been to ~ 50 countries, some of which I have forgotten, and many of which I would like to revisit.
-- In 2016, I visited: Canada, Ethiopia, Austria, Germany, Belgium, Ireland, Northern Ireland, Italy, Romania, Sweden, Norway, Svalbard, Panama, Costa Rica, Uganda, Japan, and the UAE, mostly in that order.
-- In 2017, I visited: Canada, Japan, Denmark, Germany, Sweden, Estonia, Russia, the Netherlands, Belgium, the U.K., Spain, Iceland, France, Switzerland, Ethiopia, and Luxembourg.
-- In 2018, I visited: Canada, France, Italy, Israel, and the U.K.
-- In 2019, I visited: Canada, England, France, and Switzerland.
-- In 2020, I barely traveled 20 blocks. I stayed in New York and remodeled an apartment.
-- In 2021, I hope to start traveling again.
-- I am an Oregon Trail II enthusiast.
+- В 2020 почти попал в Будапешт на музыкальный фестиваль [Sziget](https://szigetfestival.com/ru/), но из-за коронавируса его отменили.
+- А в целом был в Италии, Чехии, Австрии и ещё много где. Жаль, не все путешествия я хорошо помню.
+- Считаю поездку из Долгопрудного в Домодедово путешествием.
+- Хочу пожить в одной из европейских стран больше 2 месяцев, чтобы почувствовать атмосферу страны и её народа.
 
-# Забавные факты
+# Интересные факты
 
-- I have a list of thousands of ideas, like creating matching bow ties for cats and humans.
-- I almost always have a sketchbook with me and a [01 Sakura Pigma Micron Pen](https://www.sakuraofamerica.com/product/pigma-micron/).
-- I can't locate every country on a map.
-- I operate a [small angel fund](http://skepticalinvestments.biz/) with terrible returns.
-- I break about 30 traffic laws on a [cruiser](https://landyachtz.com/boards/cruiser/), [onewheel](https://onewheel.com/products/xr), [bicycle](https://www.citibikenyc.com/), or [electric skateboard](https://boostedusa.com/collections/electric-skateboards/products/boosted-mini-x) every single day.
-- I added this page because so many people complained that my site was just my resume.
+- Я люблю рассуждать о сложных этических вопросах и часто встаю в позицию "адвоката дьявола" при споре, даже если не исповедую эту точку зрения, чтобы понять, как человек будет отвечать на каверзные вопросы. Возможно, это появилось у меня из-за моего прошлого интервьюера.
+- У меня часто появляются идеи по улучшению мира, и иногда я не понимаю, почему некоторые вещи (например, электронные подписи и документооборот) полностью не входят в жизнь людей. Ведь это уже есть! Просто надо прикрутить.
+- Быть менеджером проектов -- это не просто. Все, кто думает, что "руководители только сидят на месте и по совещаниям ходят", отчасти правы. Но это их работа, и вы спокойно и без "срочно вчера" работаете благодарая их планированию вашей работы. Это большой труд.
+- Люблю конструктивную критику. Ну правда. Долго к этому шёл, чтобы не принимать это на личный счет. В итоге считаю это одним из своих лучших качеств -- умение принимать критику.
 
-# Я мечтаю о
+# Я мечтаю о том, чтобы
 
-- always finding inspiration.
-- enabling a brighter future.
-- doing better.
-- you not checking the commit history for earlier drafts of this file.
-
-# Ссылки на людей, которыми я восхищаюсь
-
-- [Alex Peysakhovich](http://alexpeys.github.io/)
-- [Chris Lengerich](http://www.chrislengerich.com/)
-- [Chris Saad](https://www.chrissaad.com/)
-- [Duncan Tomlin](http://duncantomlin.com/)
-- [Hawley Moore](http://hawleymoore.com/)
-- [Holman Gao](https://golmansax.com/)
-- [Ian Webster](http://ianww.com/)
-- [Johanna Flato](https://www.johannaflato.com/)
-- [Judy Mou](http://www.judymou.com/)
-- [Kristina Monakhova](https://kristinamonakhova.com/)
-- [Noah Trueblood](http://notrueblood.com/)
-- [Ruoxi Wang](http://ruoxiw.com/)
-- [Tom Sachs](https://www.tomsachs.org/)
-
-If we are friends and you feel like you belong on this list, you're probably right. I'm sorry I forgot about you. Pester me and I'll add you.
+- этот мир стал красивым. Ведь красота вокруг делает нас красивыми внутри.
+- люди стали сильнее и компетентнее, в жизни было меньше стресса.
+- я становился лучше изо дня в день
