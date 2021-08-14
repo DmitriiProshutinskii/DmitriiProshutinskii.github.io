@@ -19,6 +19,7 @@ Tested with: [node](https://nodejs.org/) >= v12 and optional [nvm](https://githu
 ## Set up
 
 To download the repository and install dependencies, run the following commands:
+https://tecadmin.net/install-nvm-macos-with-homebrew/
 
 ```bash
 git clone git://github.com/mldangelo/personal-site.git # replace [mldangelo] with your github username if you fork first.
