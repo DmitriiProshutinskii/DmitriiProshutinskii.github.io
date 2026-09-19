@@ -1,40 +1,21 @@
 const courses = [
   {
-    title: 'Developing Applications for iOS using SwiftUI',
-    number: 'CS 193p',
-    link: 'https://cs193p.sites.stanford.edu/',
-    university: 'Stanford',
-  },
-  {
-    title: 'Technical Support Fundamentals',
-    number: '1/6',
-    link: 'https://www.coursera.org/account/accomplishments/certificate/EN64UB3H5XQN',
-    university: 'Google',
-  },
-  {
-    title: 'The Bits and Bytes of Computer Networking',
-    number: '2/6',
-    link: 'https://www.coursera.org/account/accomplishments/certificate/JA624DHUV43R',
-    university: 'Google',
-  },
-  {
-    title: 'C# Programming for Unity Game Development',
-    number: '4/4',
-    link:
-      'https://www.coursera.org/account/accomplishments/specialization/certificate/2GHHE6JYCVXZ',
-    university: 'University of Colorado',
-  },
-  {
-    title: 'Introduction to Programming in Swift 5',
+    title: 'Kotlin / Android разработчик (в процессе)',
     number: '/',
-    link: 'https://www.coursera.org/account/accomplishments/certificate/V9KAMYR623C7',
-    university: 'Learn Quest',
+    link: 'https://practicum.yandex.ru/',
+    university: 'Яндекс Практикум',
   },
   {
-    title: 'Crash Course on Python',
-    number: '1/7',
-    link: 'https://www.coursera.org/account/accomplishments/certificate/SFGG5DLRDSFD',
-    university: 'Google',
+    title: 'DELE A2 (испанский язык)',
+    number: 'A2',
+    link: 'https://www.cervantes.es/',
+    university: 'Instituto Cervantes',
+  },
+  {
+    title: 'LeetCode — 100+ дней активной практики алгоритмов',
+    number: '100+',
+    link: 'https://leetcode.com/',
+    university: 'LeetCode',
   },
 ];
 

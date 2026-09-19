@@ -1,40 +1,28 @@
-import React, { useState, useEffect } from 'react';
-
-const Age = () => {
-  const [age, setAge] = useState();
-
-  const tick = () => {
-    const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
-    const birthTime = new Date('1996-12-31T06:45:00');
-    setAge(((Date.now() - birthTime) / divisor).toFixed(11));
-  };
-
-  useEffect(() => {
-    const timer = setInterval(() => tick(), 25);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-  return <>{age}</>;
-};
-
 const data = [
   {
-    key: 'age',
-    label: 'Возраст',
-    value: <Age />,
+    key: 'experience',
+    label: 'Лет опыта в мобильной разработке',
+    value: '5+',
   },
   {
-    key: 'countries',
-    label: 'Посещенные страны',
-    value: 53,
-    link:
-      'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
+    key: 'mau',
+    label: 'MAU приложения, где я Feature Owner',
+    value: '500 тыс.',
+  },
+  {
+    key: 'bugs',
+    label: 'Снижение продакшн-багов на проекте Epic Charging',
+    value: '~25%',
+  },
+  {
+    key: 'prs',
+    label: 'Доля моих PR во внутреннем UIKit-пакете команды',
+    value: '47%',
   },
   {
     key: 'location',
     label: 'Город проживания',
-    value: 'Долгопрдуный, МО',
+    value: 'Москва, Россия',
   },
 ];
 
