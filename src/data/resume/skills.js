@@ -1,76 +1,88 @@
-// TODO: Add Athletic Skills, Office Skills,
-// Data Engineering, Data Science, ML Engineering, ... ?
-
 const skills = [
+  {
+    title: 'Flutter',
+    competency: 5,
+    category: ['Mobile Dev', 'Core'],
+  },
+  {
+    title: 'Dart',
+    competency: 5,
+    category: ['Languages', 'Core'],
+  },
+  {
+    title: 'BLoC / Cubit',
+    competency: 5,
+    category: ['Architecture', 'State Management'],
+  },
+  {
+    title: 'Clean Architecture',
+    competency: 5,
+    category: ['Architecture'],
+  },
+  {
+    title: 'TDD',
+    competency: 4,
+    category: ['Architecture', 'Testing'],
+  },
+  {
+    title: 'Provider',
+    competency: 4,
+    category: ['State Management'],
+  },
+  {
+    title: 'Firebase',
+    competency: 4,
+    category: ['Tools', 'Backend'],
+  },
+  {
+    title: 'REST API',
+    competency: 4,
+    category: ['Backend'],
+  },
+  {
+    title: 'CI/CD (Codemagic, GitHub Actions)',
+    competency: 4,
+    category: ['Tools'],
+  },
+  {
+    title: 'Дизайн-системы / UIKit',
+    competency: 4,
+    category: ['UI/UX'],
+  },
+  {
+    title: 'Google Maps SDK',
+    competency: 3,
+    category: ['Tools', 'Mobile Dev'],
+  },
+  {
+    title: 'Юнит / виджет / интеграционные тесты',
+    competency: 4,
+    category: ['Testing'],
+  },
+  {
+    title: 'Swift',
+    competency: 2,
+    category: ['iOS', 'Mobile Dev'],
+  },
+  {
+    title: 'Kotlin',
+    competency: 2,
+    category: ['Android', 'Mobile Dev'],
+  },
+  {
+    title: 'Git',
+    competency: 4,
+    category: ['Tools'],
+  },
   {
     title: 'C#',
     competency: 3,
-    category: ['GameDev', 'Languages', '.NET', 'Core'],
+    category: ['GameDev', 'Languages'],
   },
   {
     title: 'Unity',
     competency: 3,
-    category: ['GameDev', 'Tools', '3D'],
-  },
-  {
-    title: 'MRTK 2.x',
-    competency: 3,
-    category: ['Tools'],
-  },
-  {
-    title: 'Bash',
-    competency: 1,
-    category: ['Tools', 'Languages'],
-  },
-  {
-    title: 'MySQL',
-    competency: 1,
-    category: ['Databases', '.NET'],
-  },
-  {
-    title: 'Git',
-    competency: 3,
-    category: ['Tools'],
-  },
-  {
-    title: 'Python',
-    competency: 2,
-    category: ['Languages', 'Python'],
-  },
-  {
-    title: 'C++',
-    competency: 1,
-    category: ['Languages'],
-  },
-  {
-    title: 'Java',
-    competency: 1,
-    category: ['Languages'],
-  },
-  {
-    title: 'Swift',
-    competency: 1,
-    category: ['iOS', 'Mobile Dev'],
-  },
-  {
-    title: 'Adobe After Effecs',
-    competency: 3,
-    category: ['Media', 'Tools'],
-  },
-  {
-    title: 'Adobe Premier Pro',
-    competency: 3,
-    category: ['Media', 'Tools'],
-  },
-  {
-    title: 'Adobe Illustrator',
-    competency: 2,
-    category: ['Media', 'Tools', 'UI/UX'],
-  },
-  {
-    title: 'Blender',
-    competency: 2,
-    category: ['Tools', '3D'],
+    category: ['GameDev', 'Tools'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
@@ -88,6 +100,7 @@ const colors = [
   '#d75858',
   '#747fff',
   '#64cb7b',
+  '#f0a500',
 ];
 
 const categories = [
@@ -96,7 +109,7 @@ const categories = [
   .sort()
   .map((category, index) => ({
     name: category,
-    color: colors[index],
+    color: colors[index % colors.length],
   }));
 
 export { categories, skills };

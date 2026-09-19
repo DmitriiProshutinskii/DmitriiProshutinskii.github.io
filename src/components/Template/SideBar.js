@@ -11,16 +11,17 @@ const SideBar = () => (
       </Link>
       <header>
         <h2>Дмитрий Прошутинский</h2>
-        <p><a href="mailto:dmitriy.proshutinskiy@phystech.edu">dmitriy.proshutinskiy@phystech.edu</a></p>
+        <p><a href="mailto:koptehe@gmail.com">koptehe@gmail.com</a></p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Привет, я Дмитрий Прошутинский. Я люблю красивые вещи и концепции.
-        Выпускник <a href="https://mipt.ru/">МФТИ</a> 2020 года, iOS разработчик в <a href="https://www.ramax.ru/">Ramax Group</a>.
-        До Ramax работал разработчиком приложений смешанной реальности в <a href="https://www.cet-mipt.ru/">Инжиниринговом Центре МФТИ</a>.
-        Люблю, когда интересные идеи воплощаются в жизнь.
+      <p>Привет, я Дмитрий Прошутинский — Senior Flutter Developer с 5+ годами опыта
+        кроссплатформенной разработки для iOS и Android.
+        Выпускник <a href="https://mipt.ru/">МФТИ</a>, сейчас работаю
+        в <a href="https://www.balady.gov.sa">Urbi / UseTech</a> над проектом Balady.
+        Люблю Clean Architecture, TDD и когда дизайн-система собирается воедино.
       </p>
       <ul className="actions">
         <li>
@@ -31,7 +32,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.</p>
+      <p className="copyright">&copy; Дмитрий Прошутинский <Link to="/">proshutinskii.com</Link>.</p>
     </section>
   </section>
 );

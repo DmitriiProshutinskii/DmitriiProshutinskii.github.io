@@ -5,8 +5,8 @@ import Main from '../layouts/Main';
 
 const Index = () => (
   <Main
-    description={"Michael D'Angelo's personal website. New York based Stanford ICME graduate, "
-    + 'co-founder and CTO of Arthena, and YC Alumni.'}
+    description="Персональный сайт Дмитрия Прошутинского, Senior Flutter Developer с 5+ годами
+    опыта кроссплатформенной разработки для iOS и Android."
   >
     <article className="post" id="index">
       <header>
