@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /api
+Allow: /
+Sitemap: https://dmitriiproshutinskii.github.io/sitemap.xml
