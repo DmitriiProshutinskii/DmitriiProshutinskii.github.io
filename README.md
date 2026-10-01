@@ -1,3 +1,11 @@
+# Current portfolio
+
+The current Figma-based site lives in [`website/`](website/README.md). Build with `npm run build:site`, preview with `npm run start:site`, and verify with `node scripts/check-site.mjs`. Pushes to `master` publish the three static pages to the existing GitHub Pages site. CV v6 is stored in `website/content/`.
+
+The original React project and its documentation follow below for reference.
+
+---
+
 # Personal Website
 
 See: [mldangelo.com](https://mldangelo.com).

@@ -1,31 +1,39 @@
 name: GitHub Pages
-
 on:
   push:
-    branches: [ master ]
+    branches: [master]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
 jobs:
-  depoy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false
-    - name: Use Node 14
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14.x
-    - name: Install
-      run: npm ci
-    - name: Build and Deploy
-      env:
-        NODE_ENV: production
-        # Remove this line if you would like to skip using google analytics
-        REACT_APP_GA_TRACKING_ID: UA-68649021-1
-        # This is set automatically by github
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: | 
-          git config user.name "Automated"
-          git config user.email "actions@users.noreply.github.com"
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/DmitriiProshutinskii/DmitriiProshutinskii.github.io.git
-          npm run deploy
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build static portfolio
+        run: npm run build:site
+      - name: Verify pages and local links
+        run: node scripts/check-site.mjs
+      - name: Check out published branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: published
+      - name: Publish to existing GitHub Pages branch
+        working-directory: published
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm -r --ignore-unmatch .
+          cp -R ../build/. .
+          git add --all
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish portfolio ${GITHUB_SHA}"
+            git push origin HEAD:gh-pages
+          fi
