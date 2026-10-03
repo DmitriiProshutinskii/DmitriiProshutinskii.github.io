@@ -13,3 +13,5 @@ Travel dates are month-only because no years were supplied. Images are AI-genera
 Existing React source and dependencies are retained for reference. The Pages workflow runs `build:site` and publishes to the existing `gh-pages` branch on pushes to `master`, without force-pushing. Old routes redirect to the new portfolio. The old PDF URL is preserved for compatibility; use Experience’s Print / Save PDF for the current resume.
 
 The primary domain is `https://proshutinskii.com/`. The build copies the root `CNAME` into the published directory; canonical URLs, sitemap and robots.txt use this domain. Keep the `CNAME` file when changing deployment scripts.
+
+Language variants are generated at `/ru/` and `/es/` with matching Experience and Travels paths, canonical URLs and hreflang links. `translations.mjs` holds reviewed RU/ES translations keyed to the English source; the build fails if a new text lacks a translation. English CV v6 remains unchanged. `preferences.js` remembers language and theme in localStorage, preserves travel anchors on language changes and follows the system theme until a manual theme is chosen. Print styling always uses a light background.
