@@ -27,3 +27,26 @@ html:not([lang=en]) .hero-copy h1{font-size:clamp(48px,5vw,72px);line-height:1.0
 #kamchatka .gallery figure:nth-child(3) img{object-position:58% center}
 .trip-index{grid-template-columns:repeat(5,minmax(0,1fr))}
 @media(max-width:600px){.trip-index{grid-template-columns:1fr 1fr}.trip-index a:nth-child(5){grid-column:1/-1;border-left:0;border-top:1px solid var(--line)}.travel-hero.real-hero>img{object-position:25% center}}
+
+/* Small technical cues: animate the glyph, keep the layout and hit areas still. */
+.link-arrow{display:inline-block;white-space:nowrap;transition:transform 180ms ease}
+.button,.theme-toggle,.language-links a,.trip-index a{transition:background-color 180ms ease,color 180ms ease,border-color 180ms ease}
+.feature,.card,.role.featured{transition:box-shadow 200ms ease}
+.photo-viewport{overflow:hidden}
+.photo-viewport .photo{transition:transform 420ms cubic-bezier(.2,.65,.3,1)}
+.portrait img{transition:transform 420ms cubic-bezier(.2,.65,.3,1);transform-origin:48% 65%}
+:is(a,button):focus-visible .link-arrow{transform:translate(2px,-2px)}
+:is(.feature,.card,.role.featured):focus-within{box-shadow:inset 0 0 0 1px var(--pink)}
+@media(hover:hover) and (pointer:fine){
+  :is(a,button):hover .link-arrow{transform:translate(2px,-2px)}
+  :is(.feature,.card,.role.featured):hover{box-shadow:inset 0 0 0 1px var(--pink)}
+  .trip-index a:hover{background:var(--panel);box-shadow:inset 0 -2px var(--pink);text-decoration:none}
+  .theme-toggle:hover{border-color:var(--pink)}
+  .gallery figure:hover .photo{transform:scale(1.035)}
+  .portrait:hover img{transform:scale(1.025)}
+}
+@media(prefers-reduced-motion:reduce){
+  .link-arrow,.button,.theme-toggle,.language-links a,.trip-index a,.feature,.card,.role.featured,.photo-viewport .photo,.portrait img{transition:none}
+  :is(a,button):is(:hover,:focus-visible) .link-arrow,.gallery figure:hover .photo,.portrait:hover img{transform:none}
+}
+@media print{.feature,.card,.role.featured{box-shadow:none}.link-arrow,.photo-viewport .photo,.portrait img{transform:none!important;transition:none}}
