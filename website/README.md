@@ -11,3 +11,5 @@ Run `npm run build:site`, then `npm run start:site` from the repository root. No
 Travel dates are month-only because no years were supplied. Images are AI-generated destination illustrations from Figma and visibly labeled. Image crops preserve the design’s 4×3 atlas.
 
 Existing React source and dependencies are retained for reference. The Pages workflow runs `build:site` and publishes to the existing `gh-pages` branch on pushes to `master`, without force-pushing. Old routes redirect to the new portfolio. The old PDF URL is preserved for compatibility; use Experience’s Print / Save PDF for the current resume.
+
+The primary domain is `https://proshutinskii.com/`. The build copies the root `CNAME` into the published directory; canonical URLs, sitemap and robots.txt use this domain. Keep the `CNAME` file when changing deployment scripts.
