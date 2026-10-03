@@ -11,4 +11,4 @@ const observer = new ResizeObserver(entries => {
     image.style.setProperty('--iy',`${-Number(slot.dataset.row)*cellHeight-(cellHeight-height)/2}px`);
   }
 });
-document.querySelectorAll('.photo').forEach(slot=>observer.observe(slot));
+document.querySelectorAll('.photo[data-col]').forEach(slot=>observer.observe(slot));
