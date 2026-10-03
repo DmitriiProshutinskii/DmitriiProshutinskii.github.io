@@ -1,6 +1,34 @@
 // Exact source-text keys keep translations tied to the verified English CV.
 // Build fails on an unknown text so new English content cannot silently remain untranslated.
 const rows = `
+Georgia¦Грузия¦Georgia
+01 / GEORGIA¦01 / ГРУЗИЯ¦01 / GEORGIA
+02 / KAMCHATKA¦02 / КАМЧАТКА¦02 / KAMCHATKA
+03 / VIETNAM¦03 / ВЬЕТНАМ¦03 / VIETNAM
+04 / CHINA¦04 / КИТАЙ¦04 / CHINA
+05 / SINGAPORE¦05 / СИНГАПУР¦05 / SINGAPUR
+01 / OCTOBER 2026¦01 / ОКТЯБРЬ 2026¦01 / OCTUBRE 2026
+02 / AUGUST¦02 / АВГУСТ¦02 / AGOSTO
+05 / MAY–JUNE¦05 / МАЙ–ИЮНЬ¦05 / MAYO–JUNIO
+GEORGIA / OCTOBER 2026¦ГРУЗИЯ / ОКТЯБРЬ 2026¦GEORGIA / OCTUBRE 2026
+OCTOBER 2026 / AUGUST / MAY–JUNE¦ОКТЯБРЬ 2026 / АВГУСТ / МАЙ–ИЮНЬ¦OCTUBRE 2026 / AGOSTO / MAYO–JUNIO
+5 PLACES / 15 FRAMES¦5 НАПРАВЛЕНИЙ / 15 КАДРОВ¦5 DESTINOS / 15 IMÁGENES
+Vardzia & Akhaltsikhe.¦Вардзия и Ахалцихе.¦Vardzia y Akhaltsikhe.
+A mini-trip through Georgia in October 2026: Vardzia, Akhaltsikhe and the road between.¦Мини-трип по Грузии в октябре 2026: Вардзия, Ахалцихе и дорога между ними.¦Un pequeño viaje por Georgia en octubre de 2026: Vardzia, Akhaltsikhe y el camino entre ambas.
+[01] VARDZIA¦[01] ВАРДЗИЯ¦[01] VARDZIA
+[02] A VIEW FROM THE CAVE¦[02] ВИД ИЗ ПЕЩЕРЫ¦[02] VISTA DESDE LA CUEVA
+[03] ON THE ROAD¦[03] В ДОРОГЕ¦[03] EN EL CAMINO
+[02] ON THE TRAIL¦[02] НА ТРОПЕ¦[02] EN EL SENDERO
+[03] A BEAR BY THE WATER¦[03] МЕДВЕДЬ У ВОДЫ¦[03] UN OSO JUNTO AL AGUA
+PERSONAL PHOTOGRAPHS¦МОИ ФОТОГРАФИИ¦MIS FOTOGRAFÍAS
+Vardzia’s cave monastery and valley¦Пещерный монастырь Вардзии и долина¦El monasterio rupestre de Vardzia y el valle
+View of the valley from a cave in Vardzia¦Вид на долину из пещеры в Вардзии¦Vista del valle desde una cueva en Vardzia
+A winding road through Georgia¦Извилистая дорога по Грузии¦Una carretera sinuosa por Georgia
+A volcano rising above clouds in Kamchatka¦Вулкан над облаками на Камчатке¦Un volcán sobre las nubes en Kamchatka
+Dmitrii hiking among rocks and steam in Kamchatka¦Дмитрий в походе среди скал и пара на Камчатке¦Dmitrii de excursión entre rocas y vapor en Kamchatka
+A brown bear beside the water in Kamchatka¦Бурый медведь у воды на Камчатке¦Un oso pardo junto al agua en Kamchatka
+Georgia and Kamchatka feature my own photographs. The images for Vietnam, China and Singapore are AI-generated illustrations from the original design concept.¦В разделах о Грузии и Камчатке — мои фотографии. Изображения Вьетнама, Китая и Сингапура созданы с помощью ИИ для первоначальной концепции сайта.¦Georgia y Kamchatka muestran mis propias fotografías. Las imágenes de Vietnam, China y Singapur son ilustraciones generadas con IA para el concepto original del sitio.
+Personal travel notes from Georgia, Kamchatka, Vietnam, China and Singapore.¦Личные заметки из путешествий по Грузии, Камчатке, Вьетнаму, Китаю и Сингапуру.¦Notas personales de viajes por Georgia, Kamchatka, Vietnam, China y Singapur.
 01 / DMITRII PROSHUTINSKII¦01 / ДМИТРИЙ ПРОШУТИНСКИЙ¦01 / DMITRII PROSHUTINSKII
 02 / EXPERIENCE¦02 / ОПЫТ¦02 / EXPERIENCIA
 03 / TRAVELS¦03 / ПУТЕШЕСТВИЯ¦03 / VIAJES

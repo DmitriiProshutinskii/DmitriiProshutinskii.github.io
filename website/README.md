@@ -8,7 +8,7 @@ Run `npm run build:site`, then `npm run start:site` from the repository root. No
 
 `content/CV-Dmitrii-Proshutinskii-v6.md` is the resume source. Experience renders its roles, summary and skills directly. Homepage highlights use the same verified metrics: manually measured startup 3.5 → 2 seconds; approximately 10–15% lower manually measured search latency over six months; first iOS/Android Epic Charging releases in six months as sole mobile engineer. Balady’s 500,000 MAU is product reach from internal analytics for 2025.
 
-Travel dates are month-only because no years were supplied. Images are AI-generated destination illustrations from Figma and visibly labeled. Image crops preserve the design’s 4×3 atlas.
+Travels begins with the October 2026 mini-trip to Vardzia and Akhaltsikhe, Georgia. Georgia and Kamchatka use six optimized personal photographs in `assets/travel/`; the remaining nine frames use the original Figma illustration atlas and are visibly labeled as AI-generated. Dates for the earlier trips remain month-only because no years were supplied.
 
 Existing React source and dependencies are retained for reference. The Pages workflow runs `build:site` and publishes to the existing `gh-pages` branch on pushes to `master`, without force-pushing. Old routes redirect to the new portfolio. The old PDF URL is preserved for compatibility; use Experience’s Print / Save PDF for the current resume.
 

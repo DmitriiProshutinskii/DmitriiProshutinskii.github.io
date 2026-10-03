@@ -18,3 +18,12 @@ html:not([lang=en]) .hero-copy h1{font-size:clamp(48px,5vw,72px);line-height:1.0
 @media(max-width:1200px){.preferences{width:100%;justify-content:flex-end;margin-top:-8px}}
 @media(max-width:600px){.preferences{justify-content:space-between;margin-top:0;gap:16px}.nav-links{flex-wrap:wrap;gap:8px 16px;justify-content:flex-start}.nav-links a{min-height:36px}.nav .identity{max-width:calc(100% - 86px)}.hero-copy h1,html:not([lang=en]) .hero-copy h1{font-size:clamp(36px,10.8vw,46px);line-height:1.08}.travel-hero h1{font-size:clamp(48px,14vw,64px);line-height:1.02}.travel-hero-copy{padding-top:120px}.experience-hero h1{font-size:clamp(42px,13vw,64px)}.contact h2{font-size:clamp(40px,11vw,52px);line-height:1.08}}
 @media print{:root[data-theme]{color-scheme:light;--paper:#fff;--ink:#20201f;--muted:#64645e;--line:#d3d2cc;--panel:#fff}.preferences{display:none}}
+
+/* Real travel photographs preserve the same gallery rhythm as the atlas. */
+.travel-hero.real-hero>img{inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 52%}
+.photo.actual-photo img{inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+#kamchatka .gallery figure:first-child img{object-position:center 70%}
+#kamchatka .gallery figure:nth-child(2) img{object-position:52% 60%}
+#kamchatka .gallery figure:nth-child(3) img{object-position:58% center}
+.trip-index{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media(max-width:600px){.trip-index{grid-template-columns:1fr 1fr}.trip-index a:nth-child(5){grid-column:1/-1;border-left:0;border-top:1px solid var(--line)}.travel-hero.real-hero>img{object-position:25% center}}
