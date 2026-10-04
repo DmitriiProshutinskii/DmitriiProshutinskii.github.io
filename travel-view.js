@@ -9,12 +9,15 @@
   let mode='list';
   try{if(localStorage.getItem('portfolio-travel-view')==='map')mode='map';}catch{}
   const update=()=>{
+    document.body.dataset.travelMode=mode;
     const wasHidden=map.hidden;
     map.hidden=mode!=='map';
     if(mode==='map'&&wasHidden){const canvas=map.querySelector('.map-canvas');canvas.scrollLeft=canvas.scrollWidth-canvas.clientWidth;}
     index.hidden=mode==='map';
     document.querySelectorAll('.map-return').forEach(link=>{link.hidden=mode!=='map';});
     entries.forEach(entry=>{entry.hidden=mode==='map'&&entry.dataset.tripEntry!==selected;});
+    const directory=document.querySelector('.travel-directory');
+    if(directory)directory.hidden=mode==='map'&&!directory.querySelector('[data-trip-entry]:not([hidden])');
     controls.querySelectorAll('[data-travel-view]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.travelView===mode)));
     map.querySelectorAll('[data-map-trip]').forEach(link=>{
       if(link.dataset.mapTrip===selected)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');
