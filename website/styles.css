@@ -50,3 +50,30 @@ html:not([lang=en]) .hero-copy h1{font-size:clamp(48px,5vw,72px);line-height:1.0
   :is(a,button):is(:hover,:focus-visible) .link-arrow,.gallery figure:hover .photo,.portrait:hover img{transform:none}
 }
 @media print{.feature,.card,.role.featured{box-shadow:none}.link-arrow,.photo-viewport .photo,.portrait img{transform:none!important;transition:none}}
+/* Travel map is local SVG data; list remains the fallback without JavaScript. */
+[hidden]{display:none!important}
+.travel-view-controls{gap:0;align-self:flex-start;border:1px solid var(--line)}
+.travel-view-controls button{font:inherit;padding:12px 20px;min-height:44px;background:none;color:var(--ink);border:0;cursor:pointer;transition:background-color 180ms ease,color 180ms ease}
+.travel-view-controls button+button{border-left:1px solid var(--line)}
+.travel-view-controls button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.travel-map-panel{padding-top:8px;gap:24px}
+.map-canvas{overflow:hidden;background:var(--panel);border:1px solid var(--line)}
+.travel-map{display:block;width:100%;height:auto;min-height:240px}
+.map-grid{fill:none;stroke:var(--line);stroke-width:.5;stroke-dasharray:2 6}
+.map-country{fill:var(--paper);stroke:var(--line);stroke-width:.7;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.map-country.visited{fill:var(--pink);stroke:var(--muted)}
+.map-target{fill:transparent;stroke:none}
+.map-dot{fill:var(--ink);stroke:var(--paper);stroke-width:1.5;vector-effect:non-scaling-stroke}
+.map-label{font:12px 'IBM Plex Mono',monospace;fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:4px;stroke-linejoin:round}
+.map-destination:focus-visible,.map-marker:focus-visible{outline:none}
+.map-destination:is(:hover,:focus-visible,[aria-current]) .visited{stroke:var(--ink);stroke-width:1.7;filter:brightness(.95)}
+.map-marker:is(:hover,:focus-visible,[aria-current]) .map-dot{fill:var(--pink);stroke:var(--ink);stroke-width:2}
+.map-destination-links{display:flex;flex-wrap:wrap;gap:12px 24px}
+.map-destination-links a{padding:8px 12px;border:1px solid var(--line);min-height:40px}
+.map-destination-links a[aria-current]{background:var(--pink);color:var(--on-pink);border-color:var(--pink)}
+.map-swatch{display:inline-block;background:var(--pink);width:12px;height:12px;margin-right:8px;border:1px solid var(--line)}
+@media(max-width:600px){.map-canvas{overflow-x:auto}.travel-map{width:800px;max-width:none;min-height:0}.map-destination-links{gap:8px}.travel-map-panel>.row{gap:12px}}
+@media(prefers-reduced-motion:reduce){.travel-view-controls button{transition:none}}
+@media print{.travel-view-controls,.travel-map-panel{display:none!important}#travel-entries>[data-trip-entry]{display:block!important}}
+
+.proof{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}

@@ -1,6 +1,34 @@
 // Exact source-text keys keep translations tied to the verified English CV.
 // Build fails on an unknown text so new English content cannot silently remain untranslated.
 const rows = `
+9+¦9+¦9+
+PROJECTS CONTRIBUTED TO¦ПРОЕКТОВ С МОИМ УЧАСТИЕМ¦PROYECTOS EN LOS QUE PARTICIPÉ
+Mobile, mixed reality and research¦Мобильная разработка, смешанная реальность и исследования¦Desarrollo móvil, realidad mixta e investigación
+INDEPENDENT APPS¦СОБСТВЕННЫХ ПРИЛОЖЕНИЯ¦APLICACIONES PROPIAS
+I build mobile apps¦Разрабатываю приложения¦Desarrollo aplicaciones móviles
+for iOS and Android.¦для iOS и Android.¦para iOS y Android.
+MOBILE ENGINEERING / FLUTTER & DART¦МОБИЛЬНАЯ РАЗРАБОТКА / FLUTTER И DART¦DESARROLLO MÓVIL / FLUTTER Y DART
+INDEPENDENT PRODUCTS¦СОБСТВЕННЫХ ПРОДУКТА¦PRODUCTOS PROPIOS
+KBT Note · Life Tracker · RusCaps¦KBT Note · Life Tracker · RusCaps¦KBT Note · Life Tracker · RusCaps
+3¦3¦3
+Three independent products.¦Три собственных продукта.¦Tres productos propios.
+Architecture, delivery¦Архитектура, выпуск¦Arquitectura, desarrollo
+and technical leadership.¦и техническое руководство.¦y liderazgo técnico.
+BACK TO MAP ↑¦К КАРТЕ ↑¦VOLVER AL MAPA ↑
+Initialization changes¦Оптимизация инициализации¦Los cambios de inicialización
+made Balady start faster.¦ускорила запуск Balady.¦aceleraron el arranque de Balady.
+Epic Charging launched on iOS and Android.¦Epic Charging выпущен для iOS и Android.¦Epic Charging se lanzó en iOS y Android.
+I owned mobile delivery.¦Я отвечал за мобильную разработку и выпуск.¦Me encargué del desarrollo y lanzamiento móvil.
+As the sole mobile engineer, I handled architecture, implementation, testing and submission to both stores.¦Как единственный мобильный инженер, я отвечал за архитектуру, реализацию, тестирование и публикацию в обоих сторах.¦Como único ingeniero móvil, me encargué de la arquitectura, la implementación, las pruebas y la publicación en ambas tiendas.
+Travel display mode¦Режим просмотра путешествий¦Modo de vista de viajes
+LIST¦СПИСОК¦LISTA
+MAP¦КАРТА¦MAPA
+VISITED COUNTRIES¦ПОСЕЩЁННЫЕ СТРАНЫ¦PAÍSES VISITADOS
+Choose a highlighted country to see the trip.¦Выбери закрашенную страну, чтобы открыть заметки.¦Elige un país resaltado para ver el viaje.
+Visited countries map¦Карта посещённых стран¦Mapa de países visitados
+Russia / Kamchatka¦Россия / Камчатка¦Rusia / Kamchatka
+Highlighted countries have a travel entry.¦Закрашены страны, о которых есть путевые заметки.¦Los países resaltados tienen una entrada de viaje.
+Map data: Natural Earth ↗¦Данные карты: Natural Earth ↗¦Datos del mapa: Natural Earth ↗
 Georgia¦Грузия¦Georgia
 01 / GEORGIA¦01 / ГРУЗИЯ¦01 / GEORGIA
 02 / KAMCHATKA¦02 / КАМЧАТКА¦02 / KAMCHATKA
