@@ -23,8 +23,9 @@ KAZ|kazakhstan|Kazakhstan|Казахстан|Kazajistán|Almaty|Алматы|Alm
 UZB|uzbekistan|Uzbekistan|Узбекистан|Uzbekistán|Tashkent, Bukhara, Samarkand|Ташкент, Бухара, Самарканд|Taskent, Bujará, Samarcanda
 BLR|belarus|Belarus|Беларусь|Bielorrusia|Minsk, Salihorsk, Gomel|Минск, Солигорск, Гомель|Minsk, Soligorsk, Gómel
 RUS|kamchatka|Russia|Россия|Rusia|Moscow, Saint Petersburg, Kazan, Nizhny Novgorod, Kislovodsk, Vladikavkaz, Tver, Tula, Yaroslavl, Pereslavl, Plyos, Ivanovo, Kostroma, Vladimir, Vologda, Krasnoyarsk, Ulan-Ude, Yakutsk|Москва, Санкт-Петербург, Казань, Нижний Новгород, Кисловодск, Владикавказ, Тверь, Тула, Ярославль, Переславль, Плёс, Иваново, Кострома, Владимир, Вологда, Красноярск, Улан-Удэ, Якутск|Moscú, San Petersburgo, Kazán, Nizhni Nóvgorod, Kislovodsk, Vladikavkaz, Tver, Tula, Yaroslavl, Pereslavl, Plios, Ivánovo, Kostromá, Vladímir, Vólogda, Krasnoyarsk, Ulán-Udé, Yakutsk
-CHN|china|China|Китай|China|||
-VNM|vietnam|Vietnam|Вьетнам|Vietnam|||
+CHN|china|China|Китай|China|Shanghai, Hong Kong|Шанхай, Гонконг|Shanghái, Hong Kong
+VNM|vietnam|Vietnam|Вьетнам|Vietnam|Da Nang, Hanoi, Hoi An|Дананг, Ханой, Хойан|Da Nang, Hanói, Hoi An
+THA|thailand|Thailand|Таиланд|Tailandia|Phuket|Пхукет|Phuket
 SGP|singapore|Singapore|Сингапур|Singapur|||
 `.trim().split('\n').map(row=>row.split('|'));
 export const visitedPlaces=rows.map(([code,id,en,ru,es,citiesEn,citiesRu,citiesEs])=>({code,id,label:en,ru,es,cities:{en:citiesEn,ru:citiesRu,es:citiesEs}}));

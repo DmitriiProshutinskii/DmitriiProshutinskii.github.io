@@ -2,7 +2,8 @@ import {placeTranslations} from './content/travel-places.mjs';
 // Exact source-text keys keep translations tied to the verified English CV.
 // Build fails on an unknown text so new English content cannot silently remain untranslated.
 const rows = `
-26 COUNTRIES / 5 JOURNAL ENTRIES¦26 СТРАН / 5 ПУТЕВЫХ ЗАМЕТОК¦26 PAÍSES / 5 ENTRADAS DE VIAJE
+PLACES VISITED¦МЕСТА, ГДЕ Я БЫЛ¦LUGARES VISITADOS
+27 COUNTRIES / 5 JOURNAL ENTRIES¦27 СТРАН / 5 ПУТЕВЫХ ЗАМЕТОК¦27 PAÍSES / 5 ENTRADAS DE VIAJE
 Places for future entries.¦Места для будущих заметок.¦Lugares para futuras entradas.
 I’ve visited these places. Dates, stories and photographs will follow.¦Я побывал в этих местах. Даты поездок, истории и фотографии добавлю позже.¦He visitado estos lugares. Más adelante añadiré fechas, historias y fotografías.
 NOTES & PHOTOS TO FOLLOW¦ЗАМЕТКИ И ФОТОГРАФИИ ДОБАВЛЮ ПОЗЖЕ¦NOTAS Y FOTOS PRÓXIMAMENTE
