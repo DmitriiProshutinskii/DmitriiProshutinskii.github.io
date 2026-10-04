@@ -10,12 +10,12 @@ console.log('Verified custom domain CNAME and canonical URLs.');
 for(const lang of ['','ru/','es/']){const html=await readFile(path.join(base,lang+'travels/index.html'),'utf8');assert(html.indexOf('id="georgia"')<html.indexOf('id="kamchatka"'),'Georgia must precede Kamchatka');assert.equal((html.match(/class="photo actual-photo"/g)||[]).length,6,'Six personal photographs');assert.equal((html.match(/data-col=/g)||[]).length,9,'Nine remaining concept illustrations');assert(!html.includes('.HEIC'),'Browser images must use supported formats');}
 for(const lang of ['','ru/','es/']){
  const html=await readFile(path.join(base,lang+'travels/index.html'),'utf8');
- assert.equal((html.match(/class="map-country visited"/g)||[]).length,5,'Five visited country geometries');
- assert.equal((html.match(/data-trip-entry=/g)||[]).length,5,'All map destinations have journal entries');
+ assert.equal((html.match(/class="map-country visited"/g)||[]).length,26,'All visited country geometries');
+ assert.equal((html.match(/data-trip-entry=/g)||[]).length,26,'All map destinations have places or journal entries');
  assert(html.includes('data-travel-view="list"')&&html.includes('data-travel-view="map"'),'Both view controls');
  assert(html.includes('id="travel-map" hidden'),'No-JS fallback keeps the full list');
  const home=await readFile(path.join(base,lang+'index.html'),'utf8');
  assert(home.includes('<p class="metric">9+</p>')&&home.includes('<p class="metric">3</p>'));
  assert(!home.includes('<p class="metric">6 months</p>')&&!home.includes('<p class="metric">3.5 → 2s</p>'));
 }
-console.log('Verified five highlighted countries, list fallback and revised homepage metrics.');
+console.log('Verified 26 highlighted countries, list fallback and revised homepage metrics.');

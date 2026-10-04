@@ -77,3 +77,10 @@ html:not([lang=en]) .hero-copy h1{font-size:clamp(48px,5vw,72px);line-height:1.0
 @media print{.travel-view-controls,.travel-map-panel{display:none!important}#travel-entries>[data-trip-entry]{display:block!important}}
 
 .proof{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+
+.place-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.place-card{padding:24px;scroll-margin-top:24px}.place-card h3{font-size:26px;line-height:32px}.place-card .mono{margin-top:auto}.additional-places{border-top:1px solid var(--line);padding-top:24px}.place-card:focus-within{border-color:var(--pink)}
+@media(max-width:900px){.place-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.place-grid{grid-template-columns:1fr}.map-destination-links{display:grid;grid-template-columns:1fr 1fr}.map-destination-links a{display:flex;align-items:center}}
+@media print{.travel-directory{display:block!important}}
+
+body[data-travel-mode=map] .place-grid{grid-template-columns:1fr}

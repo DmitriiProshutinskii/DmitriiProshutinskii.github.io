@@ -1,6 +1,14 @@
+import {placeTranslations} from './content/travel-places.mjs';
 // Exact source-text keys keep translations tied to the verified English CV.
 // Build fails on an unknown text so new English content cannot silently remain untranslated.
 const rows = `
+26 COUNTRIES / 5 JOURNAL ENTRIES¦26 СТРАН / 5 ПУТЕВЫХ ЗАМЕТОК¦26 PAÍSES / 5 ENTRADAS DE VIAJE
+Places for future entries.¦Места для будущих заметок.¦Lugares para futuras entradas.
+I’ve visited these places. Dates, stories and photographs will follow.¦Я побывал в этих местах. Даты поездок, истории и фотографии добавлю позже.¦He visitado estos lugares. Más adelante añadiré fechas, historias y fotografías.
+NOTES & PHOTOS TO FOLLOW¦ЗАМЕТКИ И ФОТОГРАФИИ ДОБАВЛЮ ПОЗЖЕ¦NOTAS Y FOTOS PRÓXIMAMENTE
+OTHER PLACES VISITED¦ДРУГИЕ МЕСТА, ГДЕ Я БЫЛ¦OTROS LUGARES VISITADOS
+Choose a highlighted country to see its places and notes.¦Выбери закрашенную страну, чтобы увидеть места и заметки.¦Elige un país resaltado para ver sus lugares y notas.
+Highlighted countries are places I have visited.¦Закрашены страны, в которых я побывал.¦Los países resaltados son lugares que he visitado.
 9+¦9+¦9+
 PROJECTS CONTRIBUTED TO¦ПРОЕКТОВ С МОИМ УЧАСТИЕМ¦PROYECTOS EN LOS QUE PARTICIPÉ
 Mobile, mixed reality and research¦Мобильная разработка, смешанная реальность и исследования¦Desarrollo móvil, realidad mixta e investigación
@@ -257,7 +265,7 @@ Switch color theme¦Переключить цветовую тему¦Cambiar el
 Site preferences¦Настройки сайта¦Preferencias del sitio
 Language¦Язык¦Idioma
 `.trim().split('\n').map(line => line.split('¦').map(s => s.trim()));
-export const translations = new Map(rows.map(([key,ru,es])=>[key,{ru,es}]));
+export const translations = new Map([...rows,...placeTranslations].map(([key,ru,es])=>[key,{ru,es}]));
 const unchanged = new Set(['DP /','2014–2020','5+',':','↗','−10–15%','GITHUB ↗','LINKEDIN ↗','TELEGRAM ↗','iOS ↗','RuStore ↗','KBT Note','Life Tracker','RusCaps','UseTech','Epic Charging','Konstructly Ltd.','No Finish Line Ltd.','RAMAX Group','Strata Solutions','Komodo Wallet ↗','Football+ ↗','KOPTEHE+JOB@GMAIL.COM ↗','koptehe@gmail.com','koptehe@gmail.com ↗','FLUTTER / ANDROID AUTO / APPLE CARPLAY','Firebase, Google Maps, 2GIS SDK, Android Auto, Apple CarPlay, Apple Wallet Pass, Sentry, Amplitude, Mixpanel, PostHog.','React Native, Expo, Next.js.']);
 const escape = s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const decode = s=>s.replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&lt;','<').replaceAll('&gt;','>');
