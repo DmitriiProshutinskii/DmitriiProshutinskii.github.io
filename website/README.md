@@ -6,7 +6,7 @@ Routes: `/`, `/experience/`, `/travels/`.
 
 Run `npm run build:site`, then `npm run start:site` from the repository root. No dependency installation is required for these Node scripts. After building, run `node scripts/check-site.mjs` to verify routes, assets and anchors.
 
-`content/CV-Dmitrii-Proshutinskii-v6.md` is the resume source. Experience renders its roles, summary and skills directly. Homepage highlights use the same verified metrics: manually measured startup 3.5 → 2 seconds; approximately 10–15% lower manually measured search latency over six months; first iOS/Android Epic Charging releases in six months as sole mobile engineer. Balady’s 500,000 MAU is product reach from internal analytics for 2025.
+`content/CV-Dmitrii-Proshutinskii-v7.md` is the resume source (AI Product Engineer positioning). Experience renders its roles, summary and skills directly; a role body keeps the CV's order, so `**LABEL**` paragraphs become mono sub-headings (Responsibilities / Key accomplishments). Homepage highlights use the same metrics: Football+ shipped solo in 2.5 months (80 screens, 40 API endpoints, 1,550 commits, 313 test files, 200+ MAU, #1 Product of the Week on Product Radar); Balady’s 500K MAU is product reach from internal analytics for 2025; ~10–15% lower search latency and startup 3.5 → 2 s are manual measurements.
 
 Travels begins with the October 2026 mini-trip to Vardzia and Akhaltsikhe, Georgia. Georgia and Kamchatka use six optimized personal photographs in `assets/travel/`; the remaining nine frames use the original Figma illustration atlas and are visibly labeled as AI-generated. Dates for the earlier trips remain month-only because no years were supplied.
 
@@ -14,7 +14,7 @@ Existing React source and dependencies are retained for reference. The Pages wor
 
 The primary domain is `https://proshutinskii.com/`. The build copies the root `CNAME` into the published directory; canonical URLs, sitemap and robots.txt use this domain. Keep the `CNAME` file when changing deployment scripts.
 
-Language variants are generated at `/ru/` and `/es/` with matching Experience and Travels paths, canonical URLs and hreflang links. `translations.mjs` holds reviewed RU/ES translations keyed to the English source; the build fails if a new text lacks a translation. English CV v6 remains unchanged. `preferences.js` remembers language and theme in localStorage, preserves travel anchors on language changes and follows the system theme until a manual theme is chosen. Print styling always uses a light background.
+Language variants are generated at `/ru/` and `/es/` with matching Experience and Travels paths, canonical URLs and hreflang links. `translations.mjs` holds reviewed RU/ES translations keyed to the English source; the build fails if a new text lacks a translation. `preferences.js` remembers language and theme in localStorage, preserves travel anchors on language changes and follows the system theme until a manual theme is chosen. Print styling always uses a light background.
 
 Homepage summary now uses 5+ years, 9+ projects contributed to (seven CV roles plus Komodo Wallet and Football+), and three independent apps. Ongoing work is included in the project count; it is not a count of completed projects. Startup and release-time evidence remain in the full CV, while homepage headings describe concrete outcomes.
 
