@@ -2,6 +2,14 @@ import {placeTranslations} from './content/travel-places.mjs';
 // Exact source-text keys keep translations tied to the verified English CV.
 // Build fails on an unknown text so new English content cannot silently remain untranslated.
 const rows = `
+COUNTRIES VISITED ↗¦СТРАН, ГДЕ Я БЫЛ ↗¦PAÍSES VISITADOS ↗
+Five journal entries so far¦Пока пять путевых заметок¦Por ahora, cinco entradas de viaje
+VISITED / 27 COUNTRIES¦ГДЕ Я БЫЛ / 27 СТРАН¦VISITADOS / 27 PAÍSES
+Spin the globe.¦Покрути глобус.¦Gira el globo.
+Pink dots are countries I’ve been to. Lines fly from Tbilisi to the journal entries. Tap a marker to jump to its entry.¦Розовые точки — страны, где я побывал. Линии ведут из Тбилиси к местам из путевых заметок. Нажми на метку, чтобы перейти к записи.¦Los puntos rosas son países que he visitado. Las líneas van de Tiflis a los lugares del diario. Toca un marcador para ir a su entrada.
+DRAG TO ROTATE¦ПОТЯНИ, ЧТОБЫ ПОВЕРНУТЬ¦ARRASTRA PARA GIRAR
+Journal entries on the globe¦Путевые заметки на глобусе¦Entradas de viaje en el globo
+Rotating globe with visited countries highlighted¦Вращающийся глобус, на котором отмечены страны, где я был¦Globo giratorio con los países visitados resaltados
 PLACES VISITED¦МЕСТА, ГДЕ Я БЫЛ¦LUGARES VISITADOS
 27 COUNTRIES / 5 JOURNAL ENTRIES¦27 СТРАН / 5 ПУТЕВЫХ ЗАМЕТОК¦27 PAÍSES / 5 ENTRADAS DE VIAJE
 Places for future entries.¦Места для будущих заметок.¦Lugares para futuras entradas.
@@ -267,7 +275,7 @@ Site preferences¦Настройки сайта¦Preferencias del sitio
 Language¦Язык¦Idioma
 `.trim().split('\n').map(line => line.split('¦').map(s => s.trim()));
 export const translations = new Map([...rows,...placeTranslations].map(([key,ru,es])=>[key,{ru,es}]));
-const unchanged = new Set(['DP /','2014–2020','5+',':','↗','−10–15%','GITHUB ↗','LINKEDIN ↗','TELEGRAM ↗','iOS ↗','RuStore ↗','KBT Note','Life Tracker','RusCaps','UseTech','Epic Charging','Konstructly Ltd.','No Finish Line Ltd.','RAMAX Group','Strata Solutions','Komodo Wallet ↗','Football+ ↗','KOPTEHE+JOB@GMAIL.COM ↗','koptehe@gmail.com','koptehe@gmail.com ↗','FLUTTER / ANDROID AUTO / APPLE CARPLAY','Firebase, Google Maps, 2GIS SDK, Android Auto, Apple CarPlay, Apple Wallet Pass, Sentry, Amplitude, Mixpanel, PostHog.','React Native, Expo, Next.js.']);
+const unchanged = new Set(['DP /','2014–2020','5+','27',':','↗','−10–15%','GITHUB ↗','LINKEDIN ↗','TELEGRAM ↗','iOS ↗','RuStore ↗','KBT Note','Life Tracker','RusCaps','UseTech','Epic Charging','Konstructly Ltd.','No Finish Line Ltd.','RAMAX Group','Strata Solutions','Komodo Wallet ↗','Football+ ↗','KOPTEHE+JOB@GMAIL.COM ↗','koptehe@gmail.com','koptehe@gmail.com ↗','FLUTTER / ANDROID AUTO / APPLE CARPLAY','Firebase, Google Maps, 2GIS SDK, Android Auto, Apple CarPlay, Apple Wallet Pass, Sentry, Amplitude, Mixpanel, PostHog.','React Native, Expo, Next.js.']);
 const escape = s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const decode = s=>s.replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&lt;','<').replaceAll('&gt;','>');
 export function translate(text,lang){if(lang==='en'||unchanged.has(text))return text;const result=translations.get(text)?.[lang];if(!result)throw new Error(`Missing ${lang} translation: ${text}`);return result;}

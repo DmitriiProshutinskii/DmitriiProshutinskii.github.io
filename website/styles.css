@@ -84,3 +84,84 @@ html:not([lang=en]) .hero-copy h1{font-size:clamp(48px,5vw,72px);line-height:1.0
 @media print{.travel-directory{display:block!important}}
 
 body[data-travel-mode=map] .place-grid{grid-template-columns:1fr}
+
+/* ---------- Motion layer (website/motion/). JS adds the fx-* classes only when motion is allowed. ---------- */
+/* Variable Inter (wght 100–900, optical size 14–32), self-hosted latin + cyrillic subsets. Static Inter stays as the fallback for other glyphs such as ↗. */
+@font-face{font-family:InterVar;src:url('assets/inter-var-latin.woff2') format('woff2');font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:InterVar;src:url('assets/inter-var-cyrillic.woff2') format('woff2');font-weight:100 900;font-display:swap;unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+body{font-family:InterVar,Inter,Arial,sans-serif;font-optical-sizing:auto}
+:root h1{font-weight:640;letter-spacing:-.047em}
+:root h2{font-weight:600;letter-spacing:-.035em}
+:root :is(h3,.title){font-weight:560;letter-spacing:-.02em}
+:root .metric{font-weight:600;letter-spacing:-.045em}
+.metric{font-variant-numeric:tabular-nums}
+:root :is(.cv-sidebar,.cv-project) h2{font-weight:400;letter-spacing:.015em}
+.full-dark .projects>p{color:inherit;font-size:30px;line-height:36px}
+.about h2,.projects>p{color:var(--ink)}
+
+/* Glassy sticky navigation on wide screens. */
+@media(min-width:901px){.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 72%,transparent);backdrop-filter:saturate(1.8) blur(20px);-webkit-backdrop-filter:saturate(1.8) blur(20px)}}
+
+/* preferences.js adds .motion before first paint; the hero stays hidden until main.js has set up its intro.
+   If the module never runs, the failsafe animation shows everything after 2.5 s. */
+:where(.motion:not(.motion-ready)) :where(main h1,.hero-copy>*,.experience-hero>*,.travel-hero-copy>*,.portrait){opacity:0;animation:motion-failsafe 0s 2.5s forwards}
+@keyframes motion-failsafe{to{opacity:1}}
+
+/* Headline words: blur + rise + weight morph. */
+.fx-intro .fx-word{display:inline-block;opacity:0;filter:blur(14px);transform:translateY(.32em) scale(1.04);font-variation-settings:'wght' 260;transition:opacity .9s cubic-bezier(.2,.7,.2,1),filter 1s cubic-bezier(.2,.7,.2,1),transform 1.1s cubic-bezier(.2,.7,.2,1),font-variation-settings 1.4s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i) * 70ms + 80ms)}
+.fx-intro.is-in .fx-word{opacity:1;filter:none;transform:none;font-variation-settings:'wght' 640}
+.travel-hero .fx-intro.is-in .fx-word{font-variation-settings:'wght' 600}
+.fx-rise{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.fx-rise.is-in{opacity:1;transform:none}
+.fx-portrait-in{animation:fx-portrait 1.6s cubic-bezier(.2,.7,.1,1) both .25s}
+.fx-portrait-in img{animation:fx-portrait-img 2.2s cubic-bezier(.2,.7,.1,1) both .25s}
+@keyframes fx-portrait{from{clip-path:inset(18% 14% round 40px);opacity:0}to{clip-path:inset(0 round 12px);opacity:1}}
+@keyframes fx-portrait-img{from{transform:scale(1.25)}to{transform:none}}
+.portrait{box-shadow:0 0 0 1px var(--line)}
+.fx-fill{transition:opacity .25s linear}
+.fx-mask{clip-path:inset(0 0 100% 0);transform:translateY(.5em);transition:clip-path 1.1s cubic-bezier(.2,.7,.1,1),transform 1.1s cubic-bezier(.2,.7,.1,1)}
+.fx-mask.is-in{clip-path:inset(-10% -5% -20% -5%);transform:none}
+.fx-bar{transform-origin:left;transform:scaleX(0);transition:transform 1.4s cubic-bezier(.2,.7,.1,1)}
+.fx-bar.is-in{transform:scaleX(1)}
+.fx-bar.after{transition-delay:.25s}
+.travel-hero>img{transform-origin:50% 40%}
+
+/* Home proof row: hairlines drawn as shadows so any wrap (4 / 2×2 / 1 column) keeps clean dividers. */
+.proof>*{box-shadow:-1px 0 var(--line),0 -1px var(--line)}
+.proof>div+div{border:0}
+.proof-globe{display:grid;grid-template-columns:1fr 128px;align-items:center;gap:12px;padding:12px 12px 12px 24px;text-decoration:none!important}
+.proof-globe>div{display:flex;flex-direction:column;gap:12px}
+.proof-globe canvas{width:128px;height:128px;display:block}
+.proof-globe:is(:hover,:focus-visible) .mono{text-decoration:underline}
+html:not(.motion-ready) .proof-globe{grid-template-columns:1fr;padding:24px}
+html:not(.motion-ready) .proof-globe canvas{display:none}
+@media(max-width:600px){.proof-globe{padding:8px 8px 8px 20px}}
+
+/* Travels: the large draggable globe (hidden without JavaScript). */
+.globe-section{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:center;border-bottom:1px solid var(--line)}
+.globe-copy{max-width:420px}
+.globe-copy nav a{padding-block:2px}
+.globe-stage{aspect-ratio:1/1;max-height:720px;width:100%}
+.globe-stage canvas{width:100%;height:100%;display:block}
+.globe-stage canvas:focus-visible{outline:2px solid var(--ink);outline-offset:-2px;border-radius:50%}
+@media(max-width:900px){.globe-section{grid-template-columns:1fr}}
+
+/* Flow field behind "Three independent products". */
+.fx-particles-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.fx-flow-host{position:relative;isolation:isolate;overflow:hidden}
+.fx-flow-host>.fx-particles-canvas{z-index:-1}
+.fx-flow-host .card{box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.fx-flow-host .dark{background:transparent}
+
+/* Liquid CTA: the filtered layer paints the button; the label stays crisp above it. */
+.fx-goo-button{position:relative;isolation:isolate;background:transparent!important;border-color:transparent!important;color:var(--paper)!important}
+.fx-goo-button:hover{text-decoration:none}
+.fx-goo-layer{position:absolute;inset:-70px;z-index:-1;filter:url(#fx-goo);pointer-events:none}
+.fx-goo-body{position:absolute;inset:70px;background:var(--ink)}
+.fx-goo-drop{position:absolute;left:50%;top:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:var(--ink)}
+.fx-goo-drop.small{width:22px;height:22px;margin:-11px 0 0 -11px}
+
+/* Dot grid: fixed layer above the page colour (body background propagates to the root) and below all content. */
+.fx-bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;display:block}
+
+@media print{.fx-bg,.globe-section,.proof-globe canvas{display:none!important}.nav{position:static}.fx-word,.fx-rise,.fx-mask,.fx-bar,.fx-fill{opacity:1!important;filter:none!important;transform:none!important;clip-path:none!important}}
