@@ -1,5 +1,7 @@
 (() => {
   const root = document.documentElement;
+  // Lets the motion layer hide the hero before first paint; it reveals it itself (see styles.css).
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) root.classList.add('motion');
   const system = window.matchMedia('(prefers-color-scheme: dark)');
   const read = key => { try { return localStorage.getItem(key); } catch { return null; } };
   const save = (key, value) => { try { localStorage.setItem(key, value); } catch {} };
